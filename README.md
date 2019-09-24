@@ -169,6 +169,40 @@ python test.py --dataroot ./datasets/facades/ --direction BtoA --model pix2pix -
 
 - See a list of currently available models at `./scripts/download_pix2pix_model.sh`
 
+## Command-line parameters
+
+--dataroot - folder where subfolders trainA and trainB should be placed
+--max_dataset_size (optional) how many files to use from the whole dataset
+--model - model name = name of *.py modiule in /models before _model (example: --model cycle_gan)
+
+gpu_ids
+isTrain
+name maps_cyclegan 
+checkpoints_dir - here --name will be created
+preprocess
+lambda_identity
+pool_size
+
+batch_size
+serial_batches
+num_threads
+
+**LR SCHEDULER**:
+lr
+lr_policy
+epoch_count
+niter
+niter_decay
+lr_decay_iters
+
+continue_train
+load_iter
+
+verbose
+display_id
+display_freq
+save_epoch_freq
+
 ## [Docker](docs/docker.md)
 We provide the pre-built Docker image and Dockerfile that can run this code repo. See [docker](docs/docker.md).
 
